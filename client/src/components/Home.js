@@ -11,7 +11,7 @@ function Home() {
   return (
     <div>
       <TopNavigation/>
-      <img src={`http://localhost:4566/${storeObj.loginDetails.profilePic}`}></img>
+      <img src={`/${storeObj.loginDetails.profilePic}`}></img>
       <h2>Name: {storeObj.loginDetails.firstName}{" "}{storeObj.loginDetails.lastName}</h2>
       <h2>Batch:2309</h2>
       <h2>Course:MERN Stack</h2>

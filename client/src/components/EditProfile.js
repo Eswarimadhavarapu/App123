@@ -26,7 +26,7 @@ function EditProfile() {
     //ageInputRef.current.value=storeObj.loginDetails.age;
     ageInputRef.current.value=storeObj.loginDetails.age
     countryInputRef.current.value=storeObj.loginDetails.country;
-    setProfilePicPath(`http://localhost:4566/${storeObj.loginDetails.profilePic}`)
+    setProfilePicPath(`/${storeObj.loginDetails.profilePic}`)
   },[])
   
 
@@ -55,7 +55,7 @@ function EditProfile() {
   //     body:dataToSendInJson,
   //     headers:myHeader,
   //    };
-  //    let JSONData=await fetch("http://localhost:4566/signup",reqOptions);
+  //    let JSONData=await fetch("/signup",reqOptions);
   //    let JSOData= await JSONData.json();
   //    console.log(JSOData);
   // }
@@ -81,7 +81,7 @@ function EditProfile() {
   //     body:dataToSend,
   //     headers:myHeader,
   //   };
-  //   let JSONData=await fetch("http://localhost:4566/signup",reqOptions)
+  //   let JSONData=await fetch("/signup",reqOptions)
   //   let JSOData=await JSONData.json()
   //   console.log(JSOData)
 
@@ -112,7 +112,7 @@ function EditProfile() {
       body:dataToSend,
       // headers:myHeader,
     };
-    let JSONData=await fetch("http://localhost:4566/updateProfile",reqOptions)
+    let JSONData=await fetch("/updateProfile",reqOptions)
     let JSOData=await JSONData.json()
     if (JSOData.status=="success"){
       alert(JSOData.msg);

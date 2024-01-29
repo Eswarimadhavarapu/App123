@@ -27,7 +27,7 @@ function TopNavigation() {
     let reqOptions={
       method:"DELETE",
     }
-    let url=`http://localhost:4566/deleteProfile?email=${storeObj.loginDetails.email}`;
+    let url=`/deleteProfile?email=${storeObj.loginDetails.email}`;
     let JSONData=await fetch(url, reqOptions);
     let JSOData=await JSONData.json();
     if(JSOData.status=="success"){
